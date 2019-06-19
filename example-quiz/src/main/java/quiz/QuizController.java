@@ -15,7 +15,7 @@ public class QuizController {
         return "quiz";
     }
 
-    @PostMapping("/result")
+    @GetMapping("/result")
     public String quizSubmit(@ModelAttribute Quiz quiz) {
         return "result";
     }

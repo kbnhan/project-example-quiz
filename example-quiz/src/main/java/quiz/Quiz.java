@@ -10,7 +10,7 @@ public class Quiz {
     }
 
     public void setUserAnswer(String user_answer) {
-        this.user_answer = user.answer;
+        this.user_answer = user_answer;
     }
 
     public String getUserAnswer() {

@@ -3,10 +3,12 @@
   <head>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="../static/css/materialize.css"  media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>        
   </head>
 
   <body>
@@ -16,25 +18,25 @@
         <form action="#" th:action="@{/result}" th:object="${quiz}">
             <p>
                 <label>
-                <input name="group1" value="Red" type="radio" th:field="*{user_answer}"/>
+                <input name="group1" value="Red" type="radio" />
                 <span>Red</span>
                 </label>
             </p>
             <p>
                 <label>
-                <input name="group1" value="Yellow" type="radio" th:field="*{user_answer}"/>
+                <input name="group1" value="Yellow" type="radio" />
                 <span>Yellow</span>
                 </label>
             </p>
             <p>
                 <label>
-                <input name="group1" value="Blue" type="radio" th:field="*{user_answer}"/>
+                <input name="group1" value="Blue" type="radio" />
                 <span>Blue</span>
                 </label>
             </p>
             <p>
                 <label>
-                <input name="group1" value="Green" type="radio" th:field="*{user_answer}"/>
+                <input name="group1" value="Green" type="radio" />
                 <span>Green</span>
                 </label>
             </p>
@@ -45,7 +47,5 @@
         </form>
       </div>
 
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="../static/js/materialize.js"></script>
   </body>
 </html>
