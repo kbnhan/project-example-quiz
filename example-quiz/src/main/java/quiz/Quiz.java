@@ -9,8 +9,8 @@ public class Quiz {
         return answer;
     }
 
-    public void setUserAnswer(String user_answer) {
-        this.user_answer = user_answer;
+    public void setUserAnswer(String input) {
+        this.user_answer = input;
     }
 
     public String getUserAnswer() {
