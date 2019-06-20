@@ -14,37 +14,71 @@
   <body>
       <div class="containter">
         <h3><b>Example Quiz</b></h3>
-        <h5>What is the color of the sky?</h5>
+
         <form action="#" th:action="@{/result}" th:object="${quiz}">
-            <p>
-                <label>
-                <input name="group1" value="Red" type="radio" />
-                <span>Red</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                <input name="group1" value="Yellow" type="radio" />
-                <span>Yellow</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                <input name="group1" value="Blue" type="radio" />
-                <span>Blue</span>
-                </label>
-            </p>
-            <p>
-                <label>
-                <input name="group1" value="Green" type="radio" />
-                <span>Green</span>
-                </label>
-            </p>
+            <ul>
+                <li>
+                    <h5>What is the color of the sky?</h5>
+                    <p>
+                        <label>
+                        <input name="group1" value="Red" type="radio" />
+                        <span>Red</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                        <input name="group1" value="Yellow" type="radio" />
+                        <span>Yellow</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                        <input name="group1" value="Blue" type="radio" />
+                        <span>Blue</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                        <input name="group1" value="Green" type="radio" />
+                        <span>Green</span>
+                        </label>
+                    </p>
+                </li>
+
+                <li>
+                    <h5>1 + 1 = ?</h5>
+                    <p>
+                        <label>
+                        <input name="group2" value="4" type="radio" />
+                        <span>4</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                        <input name="group2" value="2" type="radio" />
+                        <span>2</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                        <input name="group2" value="3" type="radio" />
+                        <span>3</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                        <input name="group2" value="0" type="radio" />
+                        <span>0</span>
+                        </label>
+                    </p>
+                </li>
+            </ul>
             <button class="btn waves-effect waves-light" type="submit" name="action" value="Submit">
                 Submit
                 <i class="material-icons right">send</i>
             </button>
         </form>
+        <!--End form container-->
       </div>
 
   </body>

@@ -13,7 +13,12 @@
 
     <body>
         <h3><b>Result</b></h3>
-        <p th:text="'The answer is: ' + ${quiz.answer}"/>
-        <p th:text="'Your answer is: ' + ${quiz.getUserAnswer()}"/>
+        <h5>Question 1</h5>
+        <p th:text="'The answer is: ' + ${quiz.getAnswer1()}"/>
+        <p th:text="'Your answer is: ' + ${quiz.getUserAnswer1()}"/>
+
+        <h5>Question 2</h5>
+        <p th:text="'The answer is: ' + ${quiz.getAnswer2()}"/>
+        <p th:text="'Your answer is: ' + ${quiz.getUserAnswer2()}"/>
     </body>
   </html>

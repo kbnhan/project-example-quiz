@@ -17,14 +17,14 @@ public class QuizController {
     }
 
     @RequestMapping("/result")
-    public String getAnswer(@RequestParam("group1") String answer, @ModelAttribute Quiz quiz) {
-        quiz.setUserAnswer(answer);
+    public String getAnswer1Param(
+        @RequestParam("group1") String answer1,
+        @RequestParam("group2") String answer2, 
+        @ModelAttribute Quiz quiz) {
+
+        quiz.setUserAnswer1(answer1);
+        quiz.setUserAnswer2(answer2);
         return "result";
-    }
-
-    // @GetMapping("/result")
-    // public String quizSubmit(@ModelAttribute Quiz quiz) {
-    //     return "result";
-    // }
-
+    }   
+    
 }
